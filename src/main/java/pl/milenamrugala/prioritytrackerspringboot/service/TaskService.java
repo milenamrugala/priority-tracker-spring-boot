@@ -1,34 +1,18 @@
 package pl.milenamrugala.prioritytrackerspringboot.service;
 
-import org.springframework.stereotype.Service;
 import pl.milenamrugala.prioritytrackerspringboot.model.Task;
-import pl.milenamrugala.prioritytrackerspringboot.repository.TaskRepository;
 
 import java.util.List;
-import java.util.Optional;
 
-@Service
-public class TaskService {
+public interface TaskService {
 
-    private final TaskRepository taskRepository;
+    List<Task> getAllTasks();
 
-    public TaskService(TaskRepository taskRepository) {
-        this.taskRepository = taskRepository;
-    }
+    Task saveTask(Task task);
 
-    public List<Task> getAllTasks() {
-        return taskRepository.findAll();
-    }
+    Task updateTask(Task task);
 
-    public Optional<Task> getTaskById(Long id) {
-        return taskRepository.findById(id);
-    }
+    Task getTaskById(Long id);
 
-    public Task saveTask(Task task) {
-        return taskRepository.save(task);
-    }
-
-    public void deleteTaskById(Long id) {
-        taskRepository.deleteById(id);
-    }
+    void deleteById(Long id);
 }
