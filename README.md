@@ -1,3 +1,6 @@
+The Priority Tracker app is a web application built using the Spring Boot. 
+It allows users to manage their tasks by providing functionalities to add, update, and delete tasks.
+
 Adding new task:
 
 <img width="1374" alt="add-new-task" src="https://github.com/milenamrugala/priority-tracker-spring-boot/assets/123079896/f2575604-609b-45a2-bdc8-f023a5afee92">
