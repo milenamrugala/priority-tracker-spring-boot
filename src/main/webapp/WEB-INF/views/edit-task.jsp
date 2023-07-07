@@ -5,10 +5,11 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="/css/add-task.css">
-    <title>Add Task</title>
+    <link rel="stylesheet" type="text/css" href="/css/header.css">
+    <title>Priority Tracker</title>
 </head>
 <body>
-<h1>Add Task</h1>
+<%@ include file="header.jsp" %><br/>
 <button class="add-task-button" onclick="location.href='/priority-tracker/list-tasks'">Task Lists</button>
 <%--@elvariable id="task" type="pl.milenamrugala.prioritytrackerspringboot.model.Task"--%>
 <form:form action="" method="POST" modelAttribute="task">

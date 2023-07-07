@@ -5,10 +5,11 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="/css/list-tasks.css">
-    <title>Task List</title>
+    <link rel="stylesheet" type="text/css" href="/css/header.css">
+    <title>Priority Tracker</title>
 </head>
 <body>
-<h1>Task List</h1>
+<%@ include file="header.jsp" %><br/>
 <button class="add-task-button" onclick="location.href='/priority-tracker/add-task'">Add New Task</button>
 <table>
     <thead>
